@@ -1,16 +1,19 @@
 {% extends 'base.html' %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
     {% block content %}
     <h4>Welcome to home page</h4>
     <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nemo dolor voluptatem illo commodi
         quos nesciunt mollitia facilis suscipit, non fuga delectus aspernatur nostrum qui voluptatibus, eum provident rerum sapiente!</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum sed dolor nostrum vero laborum. Dolorum eligendi ratione suscipit id perspiciatis totam velit ducimus temporibus, maiores labore magni soluta perferendis nulla.</p>    
     {% endblock %}    
 </body>
 </html>

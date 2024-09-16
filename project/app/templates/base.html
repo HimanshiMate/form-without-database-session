@@ -1,10 +1,17 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <style>
+        #nav img{
+            border-radius: 50px;
+            margin-left: -100px;
+
+        }
         #nav {
             font-size: 30px;
             background-color: rgb(12, 71, 126);
@@ -34,6 +41,7 @@
 <body>
     <center>
     <section id="nav">
+        <!-- <img src="{% static 'images/bus.jpg' %}" width="100px"   alt=""> -->
         <a href="{% url 'home' %}">Home</a>
         <a href="{% url 'regi' %}">Registration</a>
         <a href="{% url 'login' %}">login</a>
@@ -51,6 +59,7 @@
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet <br>
                 repudiandae ut omnis in quis quia. Velit optio aliquid magnam cum,<br>
                  beatae porro incidunt illo perspiciatis maxime. Esse neque eos natus!</p>
+                 
             </div>
             <ul>
                 <h4>FOOTER</h4>
